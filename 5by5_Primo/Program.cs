@@ -5,8 +5,16 @@ int option = 0;
 
 do
 {
-    Console.WriteLine("Digite um número:");
-    n = int.Parse(Console.ReadLine());
+    do
+    {
+        Console.WriteLine("Digite um número:");
+        n = int.Parse(Console.ReadLine());
+
+        if (n < 1)
+        {
+            Console.WriteLine("\nO número deve ser maior que 0!\n");
+        }
+    } while (n < 1);
 
     for(int i = 1; i < (n/2) + 1; i++)
     {
