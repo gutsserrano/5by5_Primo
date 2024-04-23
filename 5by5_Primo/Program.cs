@@ -24,13 +24,14 @@ do
         }
     }
 
-    if (contador == 2)
+    switch (contador)
     {
-        Console.WriteLine($"\n{n} é um número primo\n");
-    }
-    else
-    {
-        Console.WriteLine($"\n{n} NÃO é um número primo\n");
+        case 2:
+            Console.WriteLine($"\n{n} é um número primo\n");
+            break;
+        default:
+            Console.WriteLine($"\n{n} NÃO é um número primo\n");
+            break;
     }
 
     do
